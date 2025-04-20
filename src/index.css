@@ -1,2 +1,6 @@
 @import "tailwindcss";
 
+body {
+  background-image: url('./assets/images/BlueBg.jpg');
+  @apply bg-cover bg-no-repeat min-h-screen
+}

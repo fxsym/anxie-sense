@@ -1,0 +1,9 @@
+Nama | Hex | Keterangan
+Primary | #A3CFFB | Latar belakang utama, tombol utama, header
+Primary Dark | #5BA4E5 | Hover state, shadow, border
+Secondary | #B2E2CC | Tombol sekunder, highlights, icon
+Secondary Dark | #7BC7A3 | Hover secondary, icon darker tone
+Accent | #F6E7C1 | Background bagian info/edukasi
+Neutral Light | #F8F9FA | Background umum
+Neutral Dark | #2E3A59 | Teks judul, heading, strong emphasis
+Text Base | #4F5D75 | Warna teks utama untuk kenyamanan baca
