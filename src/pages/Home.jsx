@@ -2,6 +2,7 @@ import { Navbar } from "../components/navbar"
 import { CardInfoAnxiety } from "../components/CardInfoAnxiety"
 import { FormNavigation } from "../components/FormNavigation"
 import { FormNavigationArrow } from "../components/FormNavigationArrow"
+import { PredictionForm } from "../components/PredictionForm"
 
 
 export const Home = () => {
@@ -19,7 +20,7 @@ export const Home = () => {
                     <h1 className="text-2xl font-bold lg:text-3xl">Lakukan prediksi level anxiety</h1>
                 </div>
 
-                <div className="bg-blue-300 h-100 flex flex-col lg:flex-row">
+                <div className="bg-blue-300 h-100 flex flex-col items-center lg:flex-row">
                     {/* <div className="w-1/5 bg-slate-50">
                         <ul className="flex flex-row items-center h-full lg:flex-col">
                             <FormNavigation title={'Sleep Hours'}/>
@@ -33,16 +34,7 @@ export const Home = () => {
                         </ul>
                     </div> */}
                     <FormNavigationArrow />
-                    <form action="" className="w-4/5 bg-slate-200">
-                        <input type="text" placeholder="Sleephours" />
-                        <input type="text" placeholder="Physical Activity (hrs/week)" />
-                        <input type="text" placeholder="Caffeine Intake (mg/day)" />
-                        <input type="text" placeholder="Alcohol Consumption (drinks/week)" />
-                        <input type="text" placeholder="Stress Level (1-10)" />
-                        <input type="text" placeholder="Heart Rate (bpm)" />
-                        <input type="text" placeholder="Breathing Rate (breaths/min)" />
-                        <input type="text" placeholder="Sweating Level (1-5)" />
-                    </form>
+                    <PredictionForm />
                 </div>
             </div>
         </>
