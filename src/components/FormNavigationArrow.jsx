@@ -31,6 +31,7 @@ export const FormNavigationArrow = () => {
                     <TitleFormNavigationArrow title={'Heart Rate'}/>
                     <TitleFormNavigationArrow title={'Breathing Rate'}/>
                     <TitleFormNavigationArrow title={'Sweating Level'}/>
+                    <TitleFormNavigationArrow title={'Submit Form'}/>
                 </div>
             </div>
             <img src={RightArrow} alt="" className="w-14 h-14 cursor-pointer" onClick={RightClick}/>

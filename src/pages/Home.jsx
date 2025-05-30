@@ -1,8 +1,7 @@
 import { Navbar } from "../components/navbar"
 import { CardInfoAnxiety } from "../components/CardInfoAnxiety"
-import { FormNavigation } from "../components/FormNavigation"
 import { FormNavigationArrow } from "../components/FormNavigationArrow"
-import { PredictionForm } from "../components/PredictionForm"
+import { FormPrediction } from "../components/FormPrediction"
 
 
 export const Home = () => {
@@ -20,7 +19,7 @@ export const Home = () => {
                     <h1 className="text-2xl font-bold lg:text-3xl">Lakukan prediksi level anxiety</h1>
                 </div>
 
-                <div className="bg-blue-300 h-100 flex flex-col items-center lg:flex-row">
+                <div className="bg-white border-3 justify-center h-105 flex flex-col items-center rounded-2xl lg:flex-row">
                     {/* <div className="w-1/5 bg-slate-50">
                         <ul className="flex flex-row items-center h-full lg:flex-col">
                             <FormNavigation title={'Sleep Hours'}/>
@@ -34,7 +33,7 @@ export const Home = () => {
                         </ul>
                     </div> */}
                     <FormNavigationArrow />
-                    <PredictionForm />
+                    <FormPrediction />
                 </div>
             </div>
         </>
