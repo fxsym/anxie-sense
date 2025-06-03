@@ -11,7 +11,16 @@ export const getPrediction = async (data) => {
         "Breathing Rate": Number(data.breathingRate),
         "Sweating Level": Number(data.sweatingLevel)
     };
+    console.log(inputData)
 
-    const response = await axios.post('http://127.0.0.1:5000/predict', inputData);
-    return response.data; // pastikan API mengembalikan `predicted_anxiety_level`
+    try {
+        const response = await axios.post('http://127.0.0.1:5000/predict', inputData);
+        return response.data; 
+    } catch (error) {
+        console.error('API Error:', error.response?.data || error.message || error);
+        throw error.response?.data || {
+            message: 'Gagal Melakukan Prediksi',
+            errors: error.response?.data?.errors || {}
+        };
+    }
 };

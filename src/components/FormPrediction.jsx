@@ -19,7 +19,7 @@ export const FormPrediction = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         setError(null)
-        if (!sleepHours || !physicalActifity || !caffeine || !alcohol || !stress || !heartRate || !breathingRate || sweatingLevel) {
+        if (!sleepHours || !physicalActifity || !caffeine || !alcohol || !stress || !heartRate || !breathingRate || !sweatingLevel) {
             setError("Harap isi semua kolom terlebih dahulu")
         }
 
@@ -33,13 +33,13 @@ export const FormPrediction = () => {
             breathingRate,
             sweatingLevel,
         }
-
+        
         try {
             setLoading(true)
             const response = await getPrediction(data)
             console.log(response)
-        } catch (error) {
-            setError(error)
+        } catch (err) {
+            console.log(err)
         } finally {
             setLoading(false)
         }
