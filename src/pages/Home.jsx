@@ -9,15 +9,17 @@ export const Home = () => {
         <>
             {/* <div className="flex flex-col items-center border shadow-lg fixed inset-0 -z-10"></div> */}
             <Navbar />
-            <div className="bg-sky-200 min-h-150 flex flex-col justify-center items-center p-4">
-                <div className="mb-8">
-                    <p className="text-4xl font-[Nunito] font-bold text-center">Kenali Tingkat Anxietymu Sekarang!</p>
-                </div>
-                <div className="mb-10">
-                    <p className="text-2xl font-[Nunito] font-bold text-center leading-7">Ukur level kecemasanmu secara instan dan rahasia. Mulailah perjalanan menuju kesehatan mental yang lebih baik.</p>
-                </div>
-                <div>
-                    <button className="bg-emerald-100 py-2 px-8 rounded-full cursor-pointer">Get Started</button>
+            <div className="min-h-150 flex flex-col justify-center items-center px-6">
+                <div className="max-w-3xl flex flex-col justify-center items-center">
+                    <div className="mb-8">
+                        <p className="text-4xl font-[Nunito] font-bold text-center lg:text-6xl">Kenali Tingkat Anxietymu Sekarang!</p>
+                    </div>
+                    <div className="mb-10">
+                        <p className="text-2xl font-[Nunito] font-bold text-center leading-7 lg:4xl">Ukur level kecemasanmu secara instan. Mulailah perjalanan menuju kesehatan mental yang lebih baik. Lorem Ipsum dolor sit amet constecteur lorem dolor sit</p>
+                    </div>
+                    <div>
+                        <button className="bg-emerald-100 py-2 px-8 rounded-full cursor-pointer">Get Started</button>
+                    </div>
                 </div>
             </div>
 
@@ -26,12 +28,12 @@ export const Home = () => {
                 <CardInfoAnxiety title={"Faktor Penyebab Anxiety"} desc={"Menurut para ahli bahwa kecemasan"} />
                 <CardInfoAnxiety title={"Anxiety Level"} desc={"Menurut para ahli bahwa kecemasanMenurut para ahli bahwa kecemasanMenurut para ahli bahwa kecemasanMenurut para ahli bahwa kecemasanMenurut para ahli bahwa kecemasan"} />
             </div>
-            <div className="flex flex-col gap-1 px-8 py-8 sm:px-16 md:px-20 lg:px-24 xl:px-30">
+            <div className="flex flex-col gap-1 px-8 py-8 sm:px-16 md:px-20 lg:px-24 xl:px-30 items-center">
                 <div className="w-full">
-                    <h1 className="text-2xl font-bold lg:text-3xl">Lakukan prediksi level anxiety</h1>
+                    <h1 className="text-2xl font-bold lg:text-3xl">Lakukan Prediksi</h1>
                 </div>
 
-                <div className="bg-white border-3 justify-center h-105 flex flex-col items-center rounded-2xl lg:flex-row">
+                <div className="bg-slate-200 border-3 justify-center flex flex-col items-center rounded-2xl lg:flex-row max-w-4xl">
                     {/* <div className="w-1/5 bg-slate-50">
                         <ul className="flex flex-row items-center h-full lg:flex-col">
                             <FormNavigation title={'Sleep Hours'}/>
