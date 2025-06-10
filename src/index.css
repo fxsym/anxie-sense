@@ -3,5 +3,5 @@
 body {
   /* background-image: url('./assets/images/BlueBg.jpg'); */
   background-color: white;
-  @apply bg-cover bg-no-repeat min-h-screen
+  @apply bg-cover bg-no-repeat min-h-screen font-['Poppins']
 }

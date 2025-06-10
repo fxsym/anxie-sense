@@ -3,7 +3,7 @@ import { alcoholRef, breathingRateRef, caffeineRef, heartRateRef, inputFormPredi
 import { InputFormPrediction } from "./InputFormPrediction"
 import { getPrediction } from "../api/getPrediction";
 
-export const FormPrediction = () => {
+export const FormPrediction = ({setResultPrediction}) => {
     const [sleepHours, setSleepHours] = useState();
     const [physicalActifity, setPhysicActifity] = useState();
     const [caffeine, setCaffeine] = useState();
@@ -38,6 +38,7 @@ export const FormPrediction = () => {
             setLoading(true)
             const response = await getPrediction(data)
             console.log(response)
+            setResultPrediction(response.predicted_anxiety_level)
         } catch (err) {
             console.log(err)
         } finally {

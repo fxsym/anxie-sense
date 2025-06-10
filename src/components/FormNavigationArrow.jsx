@@ -16,7 +16,7 @@ export const FormNavigationArrow = () => {
     }
 
     return (
-        <div className="flex justify-center bg-emerald-200">
+        <div className="flex justify-center ">
             <img src={LeftArrow} alt="" className="w-14 h-14 cursor-pointer lg:hidden" onClick={LeftClick}/>
             <div
                 ref={sliderRef}
