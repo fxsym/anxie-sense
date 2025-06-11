@@ -3,7 +3,7 @@ import { alcoholRef, breathingRateRef, caffeineRef, heartRateRef, inputFormPredi
 import { InputFormPrediction } from "./InputFormPrediction"
 import { getPrediction } from "../api/getPrediction";
 
-export const FormPrediction = ({setResultPrediction}) => {
+export const FormPrediction = ({setResultPrediction, setLoadingStatus, setFirstPredict}) => {
     const [sleepHours, setSleepHours] = useState();
     const [physicalActifity, setPhysicActifity] = useState();
     const [caffeine, setCaffeine] = useState();
@@ -18,6 +18,7 @@ export const FormPrediction = ({setResultPrediction}) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        setFirstPredict(true)
         setError(null)
         if (!sleepHours || !physicalActifity || !caffeine || !alcohol || !stress || !heartRate || !breathingRate || !sweatingLevel) {
             setError("Harap isi semua kolom terlebih dahulu")
@@ -35,10 +36,13 @@ export const FormPrediction = ({setResultPrediction}) => {
         }
         
         try {
-            setLoading(true)
+            setResultPrediction(null)
+            setLoadingStatus(true)
             const response = await getPrediction(data)
             console.log(response)
-            setResultPrediction(response.predicted_anxiety_level)
+            setTimeout(() => {
+                setResultPrediction(response.predicted_anxiety_level)
+            }, 1500);
         } catch (err) {
             console.log(err)
         } finally {
