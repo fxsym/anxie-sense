@@ -6,13 +6,13 @@ import { TitleFormNavigationArrow } from "./TitleFormNavigationArrow"
 export const FormNavigationArrow = () => {
 
     const LeftClick = () =>{
-        sliderRef.current.scrollBy({ left: -260, behavior: 'smooth' });
-        inputFormPredictionRef.current.scrollBy({ left: -400, behavior: 'smooth' });
+        sliderRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+        inputFormPredictionRef.current.scrollBy({ left: -280, behavior: 'smooth' });
     }
 
     const RightClick = () =>{
-        inputFormPredictionRef.current.scrollBy({ left: 400, behavior: 'smooth' });
-        sliderRef.current.scrollBy({ left: 260, behavior: 'smooth' });
+        inputFormPredictionRef.current.scrollBy({ left: 280, behavior: 'smooth' });
+        sliderRef.current.scrollBy({ left: 200, behavior: 'smooth' });
     }
 
     return (
@@ -20,7 +20,7 @@ export const FormNavigationArrow = () => {
             <img src={LeftArrow} alt="" className="w-14 h-14 cursor-pointer lg:hidden" onClick={LeftClick}/>
             <div
                 ref={sliderRef}
-                className="w-65 overflow-hidden flex whitespace-nowrap items-center lg:overflow-visible"
+                className="w-50 lg:w-65 overflow-hidden flex whitespace-nowrap items-center lg:overflow-visible"
             >
                 <div className="flex lg:flex-col lg:gap-0.5">
                     <TitleFormNavigationArrow title={'Sleep Hours'} targetRef={sleepHoursRef}/>

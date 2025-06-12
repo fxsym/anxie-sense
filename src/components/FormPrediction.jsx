@@ -54,7 +54,7 @@ export const FormPrediction = ({setResultPrediction, setLoadingStatus, setFirstP
         <form action=""
             onSubmit={handleSubmit}
             ref={inputFormPredictionRef}
-            className="flex w-100 overflow-hidden items-center"
+            className="flex w-70 lg:w-140 overflow-hidden items-center"
         >
             <div className="flex">
                 <InputFormPrediction
@@ -121,7 +121,7 @@ export const FormPrediction = ({setResultPrediction, setLoadingStatus, setFirstP
                     targetRef={sweatingLevelRef}
                 />
 
-                <div className="w-100 flex flex-col items-center" ref={submitFormRef}>
+                <div className="w-70 lg:w-140 flex flex-col items-center" ref={submitFormRef}>
                     <p className="">If u already input all params, u can submit and get the prediction</p>
                     <button className="border py-2 px-4 rounded-2xl">Submit</button>
                     <p className="text-red-500">{error ? error : ""}</p>

@@ -39,7 +39,7 @@ export const Home = () => {
                     <h1 className="text-2xl font-bold lg:text-3xl">Lakukan Prediksi</h1>
                 </div>
 
-                <div className="flex flex-col gap-8 lg:flex-row">
+                <div className="flex flex-col gap-8 lg:flex-row items-center justify-center">
                     <div className="bg-emerald-100 shadow-2xl transition-all duration-200 rounded-2xl hover:shadow-black hover:shadow-2xl justify-center flex flex-col items-center  lg:gap-6 lg:items-stretch lg:flex-row lg:p-6">
                         <FormNavigationArrow />
                         <FormPrediction setResultPrediction={setResultPrediction} setLoadingStatus={setLoadingStatus} setFirstPredict={setFirstPredict}/>
