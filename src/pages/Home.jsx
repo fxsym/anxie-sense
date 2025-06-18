@@ -4,6 +4,7 @@ import { FormNavigationArrow } from "../components/FormNavigationArrow"
 import { FormPrediction } from "../components/FormPrediction"
 import { ResultPrediction } from "../components/ResultPrediction"
 import { useState } from "react"
+import Footer from "../components/Footer"
 
 
 export const Home = () => {
@@ -24,7 +25,7 @@ export const Home = () => {
                         <p className="text-2xl font-[Nunito] font-bold text-center leading-7 lg:4xl">Ukur level kecemasanmu secara instan. Mulailah perjalanan menuju kesehatan mental yang lebih baik. Lorem Ipsum dolor sit amet constecteur lorem dolor sit</p>
                     </div>
                     <div>
-                        <button className="bg-emerald-100 py-2 px-8 rounded-full cursor-pointer">Get Started</button>
+                        <button className="bg-sky-200/80 py-2 px-8 rounded-full cursor-pointer">Get Started</button>
                     </div>
                 </div>
             </div>
@@ -40,7 +41,7 @@ export const Home = () => {
                 </div>
 
                 <div className="flex flex-col gap-8 lg:flex-row items-center justify-center">
-                    <div className="bg-emerald-100 shadow-2xl transition-all duration-200 rounded-2xl hover:shadow-black hover:shadow-2xl justify-center flex flex-col items-center  lg:gap-6 lg:items-stretch lg:flex-row lg:p-6">
+                    <div className="bg-sky-200/80 shadow-2xl transition-all duration-200 rounded-2xl hover:shadow-black hover:shadow-2xl justify-center flex flex-col items-center  lg:gap-6 lg:items-stretch lg:flex-row lg:p-6">
                         <FormNavigationArrow />
                         <FormPrediction setResultPrediction={setResultPrediction} setLoadingStatus={setLoadingStatus} setFirstPredict={setFirstPredict}/>
                     </div>
@@ -49,6 +50,7 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }
